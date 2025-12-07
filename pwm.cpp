@@ -1,8 +1,6 @@
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
-#include <cstring>
-#include <clocale>
 #include <windows.h>
 
 using namespace std;
