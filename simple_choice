@@ -11,7 +11,7 @@ int main() {
     
     for (unsigned char i = 0; i < 7; i++) {
 
-        unsigned char minIndex = i; // Тип индекса тоже должен быть маленьким
+        unsigned char minIndex = i; 
 
         for (unsigned char j = i + 1; j < 7; j++) {
             if (a[j] < a[minIndex]) {
@@ -21,7 +21,7 @@ int main() {
 
        
      
-        if (minIndex != i) { // Маленькая оптимизация: меняем только если нашли меньший
+        if (minIndex != i) { 
             short box = a[i];
             a[i] = a[minIndex];
             a[minIndex] = box;
