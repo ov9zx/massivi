@@ -6,18 +6,18 @@ using namespace std;
 
 int main() {
     long long n;          
-    long long b = 0;      
-    long long p = 1;      
+    long long a = 0;      
+    long long b = 1;      
     cout << "Enter number: ";
     cin >> n;
 
     do {
         int r = n % 2;   
         
-        b = b + (r * p); 
+        a = a + (r * b); 
         
         n = n / 2;      
-        p = p * 10;      
+        b = b * 10;      
         
     } while (n > 0);
 
