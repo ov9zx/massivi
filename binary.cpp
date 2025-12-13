@@ -1,27 +1,28 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-
-
-
 int main() {
-    long long n;          
-    long long a = 0;      
-    long long b = 1;      
+    long long n;
+    string binary = "";
+
     cout << "Enter number: ";
     cin >> n;
 
     do {
-        int r = n % 2;   
-        
-        a = a + (r * b); 
-        
-        n = n / 2;      
-        b = b * 10;      
-        
+        int r = n % 2;
+
+
+        if (r == 0) {
+            binary = "0" + binary;
+        } else {
+            binary = "1" + binary;
+        }
+
+        n /= 2;
     } while (n > 0);
 
-    cout << "Binary: " << b << endl;
+    cout << "Binary is: " << binary << endl;
 
     return 0;
 }
